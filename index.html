@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьная библиотека</title>
+    <link rel="icon" href="images/logo_br.svg">
+
+    <link rel="stylesheet" href="styles/style_index.css">
+    <link rel="stylesheet" href="styles/style_header.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <img src="images/logo_header.png" alt="Логотип" class="page-header__logo">
+        <div class="text_header">
+            <span class="page-header__logotip">Школьная библиотека</span>
+            <span class="page-header__logotip">МАОУ лицей №51 г.Томска</span>
+        </div>
+        
+    </header>
+    
+
+    <div class="container">
+        <input type="checkbox" id="register_toggle">
+        <div class="slider">
+            <form class="form">
+                <span class="title">Вход</span>
+                <div class="form_control">
+                    <label>Имя пользователя</label>
+                    <input type="text" required>
+                </div>
+                <div class="form_control">
+                    <label>Пароль</label>
+                    <input type="password" required>
+                </div>
+                <!-- <button id="loginButton">Войти</button> -->
+
+                <button onclick="window.location.href='start.html'">Войти</button>
+            </form>
+        </div>
+    </div>
+
+<!-- 
+    <script>
+        document.getElementById("loginButton").addEventListener("click", function() {
+            window.location.href = "start.html";
+        });
+    </script>
+     -->
+
+
+
+
+</body>
+</html>

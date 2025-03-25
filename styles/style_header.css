@@ -1,0 +1,29 @@
+.page-header {
+    display: flex;
+    align-items: center;  /* Выравнивание по центру по вертикали */
+    justify-content: flex-start;  /* Все элементы слева */
+    width: 100%;
+    height: 115px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    background-color: #F5F1EB;
+    padding: 0 20px;
+}
+
+.text_header {
+    display: flex;
+    flex-direction: column;  /* Столбик */
+    margin-left: 20px;
+}
+
+.page-header__logotip {
+    color: #573C39;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+}
+
+.page-header__logo {
+    height: 100px;
+    width: 150px;
+}

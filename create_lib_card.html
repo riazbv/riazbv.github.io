@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьная библиотека</title>
+    <link rel="icon" href="images/logo_br.svg">
+    
+    <link rel="stylesheet" href="styles/style_start.css">
+    <link rel="stylesheet" href="styles/style_header_auth.css">
+    <link rel="stylesheet" href="styles/style_lib_card_id.css">
+
+    <link rel="stylesheet" href="styles/style_lib_card_search.css"> 
+
+</head>
+
+<body>
+
+    <header class="page-header">
+        <a href="start.html">
+            <img src="images/logo_header.png" alt="Логотип" class="page-header__logo">
+        </a>
+        <div class="text_header">
+            <a href="start.html" class="page-header__logotip">Школьная библиотека</a>
+            <a href="start.html" class="page-header__logotip">МАОУ лицей №51 г.Томска</a>
+        </div>
+        <button class="exit-button" onclick="window.location.href='index.html'">Выход</button>
+    </header>
+
+    <div class="search-container">
+
+        <label for="id">ID</label>
+        <input type="text" id="id" placeholder="">
+
+        <label for="surname">Фамилия</label>
+        <input type="text" id="surname" placeholder="Введите фамилию">
+    
+        <label for="name">Имя</label>
+        <input type="text" id="name" placeholder="Введите имя">
+    
+        <label for="patronymic">Отчество</label>
+        <input type="text" id="patronymic" placeholder="Введите отчество">
+    
+        <label for="class">Класс</label>
+        <div class="class-inputs">
+            <input type="text" id="class-number" placeholder="Номер">
+            <input type="text" id="class-letter" placeholder="Буква">
+        </div>        
+    
+    
+        <button class="search-button">Создать</button>
+    </div>
+    
+
+</body>

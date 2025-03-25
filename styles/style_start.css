@@ -1,0 +1,78 @@
+/* Основные стили для страницы */
+body {
+    background-color: #FDFCFB;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    margin: 0;
+}
+
+/* Контейнер для колонок */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Устанавливаем 100%, чтобы контейнер не выходил за пределы экрана */
+    max-width: 1400px; /* Определим максимальную ширину, чтобы не растягивался слишком сильно на больших экранах */
+    padding: 80px 0px 0px; /* Увеличиваем отступы слева и справа */
+    margin: 0 auto; /* Центрируем контейнер */
+    box-sizing: border-box; /* Чтобы отступы не влияли на общую ширину */
+}
+
+/* Колонки */
+.column {
+    width: 27%; /* 4 колонки */
+    text-align: center;
+}
+
+/* Стили для надписей */
+/* Основные стили для текста */
+.link-item {
+    display: block;
+    font-size: 18px;
+    color: #222222; /* Текст темно-серого цвета */
+    background-color: transparent; /* Убираем фон */
+    padding: 0; /* Убираем отступы */
+    margin-bottom: 25px; /* Отступ снизу */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: none; /* Убираем анимацию */
+}
+
+/* Убираем эффект hover */
+.link-item:hover {
+    background-color: transparent; /* Убираем изменение фона при наведении */
+    color: #222222; /* Убираем изменение цвета текста */
+}
+
+
+/* Стили для кнопок */
+button {
+    display: block; /* Чтобы кнопки располагались вертикально */
+    width: 100%; /* Кнопки занимают всю ширину колонки */
+    font-size: 16px;
+    color: #222222;
+    background-color: #D8C3A5;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #A67C52;
+    color: #FDFCFB;
+}
+
+/* Для выделения текста */
+::selection {
+    color: #222222;
+    background-color: #D8C3A5;
+}
+
+/* Стили для кнопки "Выход" */
+.page-header .exit-button {
+    /* Оставляем кнопку "Выход" как есть, только убираем влияние на остальные кнопки */
+    width: auto; /* Это для того, чтобы кнопка не занимала всю ширину */
+    margin-left: auto; /* Сдвигаем кнопку вправо */
+    margin-top: 0; /* Убираем верхний отступ, чтобы она не перекрывала другие элементы */
+}

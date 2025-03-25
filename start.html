@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьная библиотека</title>
+    <link rel="icon" href="images/logo_br.svg">
+    <link rel="stylesheet" href="styles/style_header_auth.css">
+    <link rel="stylesheet" href="styles/style_start.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Хедер (оставляем как есть) -->
+    <header class="page-header">
+        <a href="start.html">
+            <img src="images/logo_header.png" alt="Логотип" class="page-header__logo">
+        </a>
+        <div class="text_header">
+            <a href="start.html" class="page-header__logotip">Школьная библиотека</a>
+            <a href="start.html" class="page-header__logotip">МАОУ лицей №51 г.Томска</a>
+        </div>
+        <button class="exit-button" onclick="window.location.href='index.html'">Выход</button>
+    </header>
+
+    <!-- Контейнер для надписей -->
+    <div class="main-container">
+        <div class="column">
+            <p class="link-item">Карточки читателей</p>
+            <button onclick="window.location.href='lib_card_search.html'">Поиск карточки читателя</button>
+            <button onclick="window.location.href='create_lib_card.html'">Создание карточки читателя</button>
+        </div>
+        <div class="column">
+            <p class="link-item">Книги</p>
+            <button onclick="window.location.href='add_book.html'">Добавить книгу</button>
+            <button onclick="window.location.href='find_book.html'">Найти книгу</button>
+        </div>
+        <div class="column">
+            <p class="link-item">Список должников</p>
+            <button onclick="window.location.href='full_debt_list.html'">Полный список</button>
+            <button onclick="window.location.href='search_debtors.html'">Класс</button>
+        </div>
+      
+    </div>
+
+</body>
+</html>
